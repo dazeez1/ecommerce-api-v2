@@ -43,7 +43,8 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.0.3",
     "morgan": "^1.10.0",
-    "winston": "^3.11.0"
+    "winston": "^3.11.0",
+    "xss": "^1.0.15"
   },
   "devDependencies": {
     "axios": "^1.12.2",

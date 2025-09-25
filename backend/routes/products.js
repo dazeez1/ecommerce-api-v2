@@ -1,14 +1,14 @@
 const express = require("express");
 const Product = require("../models/Product");
 const { auth, adminAuth } = require("../middleware/auth");
-const { validateRequest, productSchema } = require("../middleware/validation");
+const { validateRequest, validateQueryParams, productSchema, productUpdateSchema, paginationSchema } = require("../middleware/validation");
 
 const router = express.Router();
 
 // @route   GET /api/products
 // @desc    Get all products with filtering and pagination
 // @access  Public
-router.get("/", async (req, res) => {
+router.get("/", validateQueryParams(paginationSchema), async (req, res) => {
   try {
     const {
       page = 1,
@@ -136,7 +136,7 @@ router.post("/", auth, validateRequest(productSchema), async (req, res) => {
 // @route   PATCH /api/products/:id
 // @desc    Update product
 // @access  Private (Admin or Product Owner)
-router.patch("/:id", auth, async (req, res) => {
+router.patch("/:id", auth, validateRequest(productUpdateSchema), async (req, res) => {
   try {
     const product = await Product.findById(req.params.id);
 

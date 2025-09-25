@@ -18,7 +18,7 @@ const generateToken = (id) => {
 // @access  Public
 router.post("/signup", validateRequest(userRegistrationSchema), async (req, res) => {
   try {
-    const { firstName, lastName, email, password, phone } = req.body;
+    const { firstName, lastName, email, password, phone, role } = req.body;
 
     // Check if user already exists
     const existingUser = await User.findOne({ email });
@@ -36,6 +36,7 @@ router.post("/signup", validateRequest(userRegistrationSchema), async (req, res)
       email,
       password,
       phone,
+      role: role || 'customer', // Use provided role or default to customer
     });
 
     await user.save();

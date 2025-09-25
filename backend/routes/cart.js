@@ -2,7 +2,7 @@ const express = require("express");
 const Cart = require("../models/Cart");
 const Product = require("../models/Product");
 const { auth } = require("../middleware/auth");
-const { validateRequest, addToCartSchema, updateCartItemSchema } = require("../middleware/validation");
+const { validateRequest, addToCartSchema, updateCartItemSchema, bulkCartUpdateSchema } = require("../middleware/validation");
 
 const router = express.Router();
 
