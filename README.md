@@ -2,7 +2,7 @@
 
 A robust and scalable e-commerce REST API built with Node.js, Express, and MongoDB. This API provides comprehensive functionality for managing products, users, orders, and authentication in an e-commerce platform.
 
-## ✨ Features
+## Features
 
 - **User Management**: User registration, authentication, and profile management with role-based access control
 - **Product Catalog**: CRUD operations for products with categories, search, and filtering
@@ -16,7 +16,7 @@ A robust and scalable e-commerce REST API built with Node.js, Express, and Mongo
 - **API Documentation**: Comprehensive endpoint documentation
 - **Testing**: Unit and integration tests with Jest
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - **Backend**: Node.js, Express.js
 - **Database**: MongoDB Atlas with Mongoose ODM
@@ -27,7 +27,7 @@ A robust and scalable e-commerce REST API built with Node.js, Express, and Mongo
 - **Logging**: Morgan for HTTP request logging
 - **Environment**: dotenv for environment variable management
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 ecommerce-api-v2/
@@ -59,7 +59,7 @@ ecommerce-api-v2/
 └── README.md
 ```
 
-## 🚀 Installation & Usage
+## Installation & Usage
 
 ### Prerequisites
 
@@ -132,7 +132,7 @@ CORS_ORIGIN=http://localhost:3000
 CORS_CREDENTIALS=true
 ```
 
-## 📚 API Documentation
+## API Documentation
 
 ### Base URL
 
@@ -148,7 +148,7 @@ All protected routes require a JWT token in the Authorization header:
 Authorization: Bearer <your-jwt-token>
 ```
 
-## 🔐 Authentication Endpoints
+## Authentication Endpoints
 
 | Method | Endpoint            | Description                  | Access    |
 | ------ | ------------------- | ---------------------------- | --------- |
@@ -224,7 +224,7 @@ Content-Type: application/json
 }
 ```
 
-## 🛍️ Product Endpoints
+## Product Endpoints
 
 | Method | Endpoint            | Description                     | Access                     |
 | ------ | ------------------- | ------------------------------- | -------------------------- |
@@ -281,7 +281,7 @@ GET /api/products?page=1&limit=10&category=electronics&sortBy=price&sortOrder=as
 }
 ```
 
-## 🛒 Cart Endpoints
+## Cart Endpoints
 
 | Method | Endpoint               | Description               | Access    |
 | ------ | ---------------------- | ------------------------- | --------- |
@@ -337,7 +337,7 @@ Content-Type: application/json
 }
 ```
 
-## 📦 Order Endpoints
+## Order Endpoints
 
 | Method | Endpoint               | Description                      | Access    |
 | ------ | ---------------------- | -------------------------------- | --------- |
@@ -423,7 +423,7 @@ Content-Type: application/json
 }
 ```
 
-## 👑 Admin Endpoints
+## Admin Endpoints
 
 | Method | Endpoint                                | Description                    | Access     |
 | ------ | --------------------------------------- | ------------------------------ | ---------- |
@@ -480,7 +480,7 @@ Content-Type: application/json
 }
 ```
 
-## 🔒 Security Features
+## Security Features
 
 ### Rate Limiting
 
@@ -511,7 +511,7 @@ Content-Type: application/json
 - Password strength requirements
 - Product data validation
 
-## 🧪 Testing
+## Testing
 
 ```bash
 # Run all tests
@@ -563,7 +563,7 @@ GET /api
 
 Returns comprehensive API documentation with all available endpoints and their descriptions.
 
-## 🚀 Deployment
+## Deployment
 
 ### Production Environment Variables
 
@@ -591,27 +591,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👨‍💻 Author
 
-**Azeez Drey**
+**Azeez Damilare Gbenga**
 
 - GitHub: [@dazeez1](https://github.com/dazeez1)
-- LinkedIn: [Azeez Drey](https://linkedin.com/in/azeez-drey)
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📞 Support
-
-If you have any questions or need help with the API, please:
-
-1. Check the [Issues](https://github.com/dazeez1/ecommerce-api-v2/issues) page
-2. Create a new issue if your question isn't already answered
-3. Contact the author via GitHub
-
----
-
-**Made with ❤️ by Azeez Drey**
